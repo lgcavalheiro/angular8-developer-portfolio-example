@@ -1,5 +1,18 @@
 @import '~carbon-components/scss/globals/scss/styles.scss';
 
 html, body {
-  background-color: #313131;
+  background-color: #131313;
+}
+
+.component {
+  position: relative;
+  top: 18vh;
+  background-color: #262626;
+  width: fit-content;
+  height: fit-content;
+  flex: initial;
+}
+
+button {
+  width: 140px;
 }

@@ -1,3 +1,14 @@
 header, footer {
-  background-color: darkblue;
+  background-color: #262626;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
 }
