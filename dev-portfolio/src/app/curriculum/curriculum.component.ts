@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { curriculum } from '../appUtils/sot';
 
 @Component({
   selector: 'app-curriculum',
