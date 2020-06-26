@@ -1,4 +1,7 @@
-@import '~carbon-components/scss/globals/scss/styles.scss';
+@import './styles/columns';
+@import './styles/rows';
+@import './styles/buttons';
+@import './styles/positioning';
 
 html, body {
   background-color: #131313;
@@ -14,6 +17,3 @@ html, body {
   flex: initial;
 }
 
-button {
-  width: 140px;
-}

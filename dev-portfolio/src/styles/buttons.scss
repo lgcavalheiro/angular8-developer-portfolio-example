@@ -1,0 +1,113 @@
+/* Button Sizes */
+
+.bt-s {
+  width: 64px;
+  height: 32px;
+  padding: 1px;
+  margin: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 8px;
+  transition: all 0.4s;
+  display: inline-block;
+  border-radius: 2px;
+  border-width: 4px
+}
+
+.bt-m {
+  width: 128px;
+  height: 32px;
+  padding: 4px;
+  margin: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  transition: all 0.4s;
+  display: inline-block;
+  border-radius: 2px;
+  border-width: 4px
+}
+
+.bt-l {
+  width: 256px;
+  height: 64px;
+  padding: 8px;
+  margin: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 32px;
+  transition: all 0.4s;
+  display: inline-block;
+  border-radius: 2px;
+  border-width: 8px;
+}
+
+/* Button styles */
+
+.bt-blue {
+  background-color: #0043ce;
+  border-style: solid;
+  border-color:  #0043ce;
+  color: #131313;
+}
+
+.bt-blue:hover {
+  border-color: #4589ff;
+}
+
+.bt-blue:active {
+  background-color: #4589ff;
+  border-color: #0043ce;
+  color: #f4f4f4;
+}
+
+.bt-gray {
+  background-color: #e0e0e0;
+  border-style: solid;
+  border-color:  #e0e0e0;
+  color: #131313;
+}
+
+.bt-gray:hover {
+    border-color: #ffffff;
+}
+
+.bt-gray:active {
+  background-color: #ffffff;
+  border-color: #e0e0e0;
+  color: #525252;
+}
+
+.bt-red {
+  background-color: #da1e28;
+  border-style: solid;
+  border-color:  #da1e28;
+  color: #131313;
+}
+
+.bt-red:hover {
+    border-color: #d64155;
+}
+
+.bt-red:active {
+  background-color: #d64155;
+  border-color: #da1e28;
+  color: #f4f4f4;
+}
+
+.bt-green {
+  background-color: #24a148;
+  border-style: solid;
+  border-color:  #24a148;
+  color: #131313;
+}
+
+.bt-green:hover {
+    border-color: #43a55b;
+}
+
+.bt-green:active {
+  background-color: #43a55b;
+  border-color: #24a148;
+  color: #f4f4f4;
+}

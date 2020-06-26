@@ -1,0 +1,61 @@
+.cl-4 {
+  display: grid;
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  /* Medium (md) */
+  @media (min-width: 768px) {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* Large (lg) */
+  @media (min-width: 1024px) {
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  /* Extra Large (xl) */
+  @media (min-width: 1280px) {
+     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.cl-3 {
+  display: grid;
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  /* Medium (md) */
+  @media (min-width: 768px) {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* Large (lg) */
+  @media (min-width: 1024px) {
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  /* Extra Large (xl) */
+  @media (min-width: 1280px) {
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.cl-2 {
+  display: grid;
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  /* Medium (md) */
+  @media (min-width: 768px) {
+     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  /* Large (lg) */
+  @media (min-width: 1024px) {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* Extra Large (xl) */
+  @media (min-width: 1280px) {
+     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.cl-1 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
