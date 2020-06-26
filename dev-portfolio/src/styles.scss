@@ -3,17 +3,29 @@
 @import './styles/buttons';
 @import './styles/positioning';
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 html, body {
   background-color: #131313;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .component {
-  position: fixed;
-  left: 13%;
-  top: 28%;
+  position: absolute;
   background-color: #262626;
-  width: fit-content;
-  height: fit-content;
-  flex: initial;
+  border-radius: 2px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media (min-width: 340px) {
+    top: 80%;
+  }
+  @media (min-width: 640px) {
+    top: 75%;
+  }
+   @media (min-width: 750px) {
+    top: 68%;
+  }
+  @media (min-width: 769px) {
+    top: 50%;
+  }
 }
-
