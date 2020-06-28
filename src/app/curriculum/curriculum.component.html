@@ -1,4 +1,4 @@
-<div class="cl-3 curriculum">
+<div class="cl-2 rw-2 curriculum">
   <div class="col content-card">
     <h2>Work History</h2>
     <div class="tabs">
@@ -24,7 +24,21 @@
 
   <div class="content-card">
     <h2>Skills</h2>
+    <div class="cl-3 rw-3">
+      <div *ngFor="let s of skills; index as i; first as isFirst">
+        {{s.name}}
+      </div>
+    </div>
+  </div>
+
+  <div class="content-card">
+    <h2>Badges & Certifications</h2>
+    <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15189734" alt="badge-percipio">
+    <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15189782" alt="badge-percipio">
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="961793d4-9ec7-4823-a7c9-8a28648d52bf" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
   </div>
 </div>
+
+
 
 

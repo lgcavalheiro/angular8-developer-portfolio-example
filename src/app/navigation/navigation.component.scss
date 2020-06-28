@@ -1,5 +1,7 @@
+@import '../../styles/variables';
+
 header, footer {
-  background-color: #262626;
+  background-color: $gray8;
   position: fixed;
   width: 100%;
   z-index: 1;
