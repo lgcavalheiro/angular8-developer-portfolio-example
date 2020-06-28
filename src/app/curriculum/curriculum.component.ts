@@ -14,5 +14,8 @@ export class CurriculumComponent implements OnInit {
   }
 
   work = curriculum.work;
+  degrees = curriculum.degrees;
+  skills = curriculum.skills;
+
 
 }

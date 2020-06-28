@@ -1,9 +1,9 @@
-<div class="component">
-  <div class="col">
+<div class="cl-3 curriculum">
+  <div class="col content-card">
     <h2>Work History</h2>
     <div class="tabs">
       <div class="tab" *ngFor="let w of work; index as i; first as isFirst">
-        <input type="radio" id="work{{i}}" name="rd">
+        <input type="checkbox" id="work{{i}}">
         <label class="tab-label" for="work{{i}}">{{w.name}}</label>
         <div class="tab-content">
           <h2>Description:</h2>
@@ -15,8 +15,15 @@
     </div>
   </div>
 
-  <div>
-    DEGREES
+  <div class="content-card">
+    <h2>Degrees & Training</h2>
+    <ul>
+      <li *ngFor="let degree of degrees; index as i; first as isFirst">{{degree}}</li>
+    </ul>
+  </div>
+
+  <div class="content-card">
+    <h2>Skills</h2>
   </div>
 </div>
 

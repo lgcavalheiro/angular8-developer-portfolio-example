@@ -2,18 +2,19 @@
 @import './styles/rows';
 @import './styles/buttons';
 @import './styles/positioning';
+@import './styles/accordion';
+@import './styles/variables';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 html, body {
-  background-color: #131313;
+  background-color: $gray9;
   font-family: 'Roboto Mono', monospace;
+  color: $gray2;
 }
 
 .component {
   position: absolute;
-  background-color: #262626;
-  border-radius: 2px;
   left: 50%;
   transform: translate(-50%, -50%);
   @media (min-width: 340px) {
@@ -28,4 +29,11 @@ html, body {
   @media (min-width: 769px) {
     top: 50%;
   }
+}
+
+.content-card {
+  background-color: $gray8;
+  border-radius: 2px;
+  margin: 4px;
+  padding: 4px;
 }

@@ -1,113 +1,136 @@
+@import 'variables';
+
 /* Button Sizes */
 
-.bt-s {
-  width: 64px;
-  height: 32px;
-  padding: 1px;
-  margin: 4px;
-  cursor: pointer;
+.bt {
   text-align: center;
-  font-size: 8px;
-  transition: all 0.4s;
   display: inline-block;
-  border-radius: 2px;
-  border-width: 4px
-}
 
-.bt-m {
-  width: 128px;
-  height: 32px;
-  padding: 4px;
-  margin: 4px;
-  cursor: pointer;
-  text-align: center;
-  font-size: 16px;
-  transition: all 0.4s;
-  display: inline-block;
-  border-radius: 2px;
-  border-width: 4px
-}
+  &-s {
+    transition: all 0.2s;
+    border-radius: 2px;
+    border-width: 4px;
+    width: 64px;
+    height: 32px;
+    padding: 1px;
+    margin: 4px;
+    font-size: 8px;
+    cursor: pointer;
+  }
 
-.bt-l {
-  width: 256px;
-  height: 64px;
-  padding: 8px;
-  margin: 4px;
-  cursor: pointer;
-  text-align: center;
-  font-size: 32px;
-  transition: all 0.4s;
-  display: inline-block;
-  border-radius: 2px;
-  border-width: 8px;
+  &-m {
+    transition: all 0.2s;
+    width: 128px;
+    height: 32px;
+    padding: 4px;
+    margin: 4px;
+    font-size: 16px;
+    border-radius: 2px;
+    border-width: 4px;
+    cursor: pointer;
+  }
+
+  &-l {
+    transition: all 0.2s;
+    width: 256px;
+    height: 64px;
+    padding: 8px;
+    margin: 4px;
+    font-size: 32px;
+    border-radius: 2px;
+    border-width: 8px;
+    cursor: pointer;
+  }
 }
 
 /* Button styles */
 
-.bt-blue {
-  background-color: #0043ce;
-  border-style: solid;
-  border-color:  #0043ce;
-  color: #131313;
-}
+.bt {
+  &-blue {
+    $base: $blue5;
+    $text: $gray2;
+    background-color: $base;
+    border-style: solid;
+    border-color:  $base;
+    color: $text;
 
-.bt-blue:hover {
-  border-color: #4589ff;
-}
+    &:hover {
+      background-color: lighten($color: $base, $amount: 20%);
+      color: lighten($color: $text, $amount: 20%);
+      box-shadow: 0 0 4px 1px $base;
+    }
 
-.bt-blue:active {
-  background-color: #4589ff;
-  border-color: #0043ce;
-  color: #f4f4f4;
-}
+    &:active {
+      background-color: darken($color: $base, $amount: 10%);
+      border-color: $base;
+      color: darken($color: $text, $amount: 70%);
+      box-shadow: none;
+    }
+  }
 
-.bt-gray {
-  background-color: #e0e0e0;
-  border-style: solid;
-  border-color:  #e0e0e0;
-  color: #131313;
-}
+  &-gray {
+    $base: $gray4;
+    $text: $gray1;
+    background-color: $base;
+    border-style: solid;
+    border-color:  $base;
+    color: $text;
 
-.bt-gray:hover {
-    border-color: #ffffff;
-}
+    &:hover {
+      background-color: lighten($color: $base, $amount: 20%);
+      color: lighten($color: $text, $amount: 20%);
+      box-shadow: 0 0 4px 1px $base;
+    }
 
-.bt-gray:active {
-  background-color: #ffffff;
-  border-color: #e0e0e0;
-  color: #525252;
-}
+    &:active {
+      background-color: darken($color: $base, $amount: 10%);
+      border-color: $base;
+      color: darken($color: $text, $amount: 70%);
+      box-shadow: none;
+    }
+  }
 
-.bt-red {
-  background-color: #da1e28;
-  border-style: solid;
-  border-color:  #da1e28;
-  color: #131313;
-}
+  &-red {
+    $base: $red5;
+    $text: $gray2;
+    background-color: $base;
+    border-style: solid;
+    border-color:  $base;
+    color: $text;
 
-.bt-red:hover {
-    border-color: #d64155;
-}
+    &:hover {
+      background-color: lighten($color: $base, $amount: 20%);
+      color: lighten($color: $text, $amount: 20%);
+      box-shadow: 0 0 4px 1px $base;
+    }
 
-.bt-red:active {
-  background-color: #d64155;
-  border-color: #da1e28;
-  color: #f4f4f4;
-}
+    &:active {
+      background-color: darken($color: $base, $amount: 10%);
+      border-color: $base;
+      color: darken($color: $text, $amount: 70%);
+      box-shadow: none;
+    }
+  }
 
-.bt-green {
-  background-color: #24a148;
-  border-style: solid;
-  border-color:  #24a148;
-  color: #131313;
-}
+  &-green {
+    $base: $green5;
+    $text: $gray2;
+    background-color: $base;
+    border-style: solid;
+    border-color:  $base;
+    color: $text;
 
-.bt-green:hover {
-    border-color: #43a55b;
-}
+    &:hover {
+      background-color: lighten($color: $base, $amount: 20%);
+      color: lighten($color: $text, $amount: 20%);
+      box-shadow: 0 0 4px 1px $base;
+    }
 
-.bt-green:active {
-  background-color: #43a55b;
-  border-color: #24a148;
-  color: #f4f4f4;
+    &:active {
+      background-color: darken($color: $base, $amount: 10%);
+      border-color: $base;
+      color: darken($color: $text, $amount: 70%);
+      box-shadow: none;
+    }
+  }
 }
