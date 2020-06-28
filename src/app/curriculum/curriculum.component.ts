@@ -13,4 +13,6 @@ export class CurriculumComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  work = curriculum.work;
+
 }
