@@ -13,25 +13,6 @@ html, body {
   color: $gray2;
 }
 
-.component {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  /* @media (min-width: 340px) {
-    top: 80%;
-  }
-  @media (min-width: 640px) {
-    top: 75%;
-  }
-   @media (min-width: 750px) {
-    top: 68%;
-  }
-  @media (min-width: 769px) {
-    top: 50%;
-  } */
-}
-
 .content-card {
   background-color: $gray8;
   border-radius: 2px;
