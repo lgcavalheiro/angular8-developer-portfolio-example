@@ -33,66 +33,14 @@
 
   <div class="content-card">
     <h2>Badges & Certifications</h2>
-    <div class="carousel-container">
-      <ul class="carousel my-carousel carousel--thumb">
-        <input class="carousel__activator" type="radio" id="K" name="thumb" checked="checked"/>
-        <input class="carousel__activator" type="radio" id="L" name="thumb"/>
-        <input class="carousel__activator" type="radio" id="M" name="thumb"/>
-        <input class="carousel__activator" type="radio" id="N" name="thumb"/>
-        <input class="carousel__activator" type="radio" id="O" name="thumb"/>
-        <div class="carousel__controls">
-          <label class="carousel__control carousel__control--backward" for="O"></label>
-          <label class="carousel__control carousel__control--forward" for="L"></label>
+    <div class="carousel">
+      <button class="bt-s bt-gray" (click)="changeBadge(-1)" style="justify-self: end;">Prev</button>
+      <div class="carousel-window">
+        <div class="carousel-item" *ngFor="let badge of badges; index as i; first as isFirst" (click)="goToBadgeUrl(badge.link)">
+          <img src="{{badge.src}}" alt="" style="{{badge.style}}" *ngIf="currentBadge == i">
         </div>
-        <div class="carousel__controls">
-          <label class="carousel__control carousel__control--backward" for="K"></label>
-          <label class="carousel__control carousel__control--forward" for="M"></label>
-        </div>
-        <div class="carousel__controls">
-          <label class="carousel__control carousel__control--backward" for="L"></label>
-          <label class="carousel__control carousel__control--forward" for="N"></label>
-        </div>
-        <div class="carousel__controls">
-          <label class="carousel__control carousel__control--backward" for="M"></label>
-          <label class="carousel__control carousel__control--forward" for="O"></label>
-        </div>
-        <div class="carousel__controls">
-          <label class="carousel__control carousel__control--backward" for="N"></label>
-          <label class="carousel__control carousel__control--forward" for="K"></label>
-        </div>
-        <li class="carousel__slide">
-          <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15189734"
-            alt="badge-percipio">
-        </li>
-        <li class="carousel__slide">
-          <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15189782"
-            alt="badge-percipio">
-        </li>
-        <li class="carousel__slide">
-          <div data-iframe-width="150" data-iframe-height="270"
-            data-share-badge-id="961793d4-9ec7-4823-a7c9-8a28648d52bf"
-            data-share-badge-host="https://www.youracclaim.com">
-          </div>
-          <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
-        </li>
-        <li class="carousel__slide">
-          <img src="https://hermes.digitalinnovation.one/certificates/cover/51F46D69.jpg"
-            style="width: 50%; height: 50%;"alt="" srcset=""
-            onclick="window.open('https://certificates.digitalinnovation.one/51F46D69','_blank')">
-        </li>
-        <li class="carousel__slide">
-          <img src="https://hermes.digitalinnovation.one/certificates/cover/AB480133.jpg"
-            style="width: 50%; height: 50%;"alt="" srcset=""
-            onclick="window.open('https://certificates.digitalinnovation.one/AB480133','_blank')">
-        </li>
-        <div class="carousel__indicators">
-          <label class="carousel__indicator" for="K"></label>
-          <label class="carousel__indicator" for="L"></label>
-          <label class="carousel__indicator" for="M"></label>
-          <label class="carousel__indicator" for="N"></label>
-          <label class="carousel__indicator" for="O"></label>
-        </div>
-      </ul>
+      </div>
+      <button class="bt-s bt-gray" (click)="changeBadge(1)" style="justify-self: start;">Next</button>
     </div>
   </div>
 
