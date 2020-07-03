@@ -32,7 +32,7 @@ export const curriculum = {
         {name: 'Javascript', icon: 'fab fa-js fa-2x'},
         {name: 'Vue.js', icon: 'fab fa-vuejs fa-2x' },
         {name: 'Node.js', icon: 'fab fa-node-js fa-2x' },
-        {name: 'Angular', icon: 'none' },
+        {name: 'Angular', icon: 'fab fa-angular fa-2x' },
         {name: 'MySQL', icon: 'none' },
         {name: 'IBM DB2', icon: 'none' },
         {name: 'MongoDB', icon: 'none' },
