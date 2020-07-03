@@ -33,7 +33,7 @@ export class CurriculumComponent implements OnInit {
     { src: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15189782', link: '' , style: ''},
     { src: 'https://hermes.digitalinnovation.one/certificates/cover/51F46D69.jpg', link: 'https://certificates.digitalinnovation.one/51F46D69' , style: 'width: 80%; height: 90%;' },
     { src: 'https://hermes.digitalinnovation.one/certificates/cover/AB480133.jpg', link: 'https://certificates.digitalinnovation.one/AB480133' , style: 'width: 80%; height: 90%;' },
-    { src: '', link: '' , style: '' },
+    { src: 'https://hermes.digitalinnovation.one/certificates/cover/94DBB041.jpg', link: 'https://certificates.digitalinnovation.one/94DBB041' , style: 'width: 80%; height: 90%;' },
   ];
 
 }
