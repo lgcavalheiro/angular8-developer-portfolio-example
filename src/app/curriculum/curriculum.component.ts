@@ -28,18 +28,6 @@ export class CurriculumComponent implements OnInit {
   degrees = curriculum.degrees;
   skills = curriculum.skills;
   currentBadge = 0;
-  badges = [
-    { src: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15189734', link: '' , style: ''},
-    { src: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15189782', link: '' , style: ''},
-    { src: 'https://hermes.digitalinnovation.one/certificates/cover/51F46D69.jpg', link: 'https://certificates.digitalinnovation.one/51F46D69' , style: 'width: 80%; height: 90%;' },
-    { src: 'https://hermes.digitalinnovation.one/certificates/cover/AB480133.jpg', link: 'https://certificates.digitalinnovation.one/AB480133' , style: 'width: 80%; height: 90%;' },
-    { src: 'https://hermes.digitalinnovation.one/certificates/cover/94DBB041.jpg', link: 'https://certificates.digitalinnovation.one/94DBB041' , style: 'width: 80%; height: 90%;' },
-  ];
+  badges = curriculum.badges;
 
 }
-
-// <div data-iframe-width="150" data-iframe-height="270"
-//   data-share-badge-id="961793d4-9ec7-4823-a7c9-8a28648d52bf"
-//   data-share-badge-host="https://www.youracclaim.com">
-// </div>
-// <script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>

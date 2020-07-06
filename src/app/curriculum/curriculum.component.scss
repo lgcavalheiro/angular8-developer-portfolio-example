@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .curriculum {
   position: absolute;
   left: 0px;
@@ -8,6 +10,7 @@
   display: grid;
   grid-template-columns: 25% 50% 25%;
   align-items: center;
+  justify-items: center;
 }
 
 .carousel-item {
@@ -16,5 +19,14 @@
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.skill-item {
+  $base: $blue5;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $base;
   }
 }

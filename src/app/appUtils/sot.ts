@@ -33,13 +33,17 @@ export const curriculum = {
         {name: 'Vue.js', icon: 'fab fa-vuejs fa-2x' },
         {name: 'Node.js', icon: 'fab fa-node-js fa-2x' },
         {name: 'Angular', icon: 'fab fa-angular fa-2x' },
-        {name: 'MySQL', icon: 'none' },
-        {name: 'IBM DB2', icon: 'none' },
-        {name: 'MongoDB', icon: 'none' },
-        {name: 'Scrum', icon: 'none' },
-        {name: 'Clean Code', icon: 'none' },
-
-        /* {name: 'Bootstrap', icon: 'fab fa-bootstrap fa-2x' },
-        {name: 'Java', icon: 'fab fa-java fa-2x'}, */
-    ]
+        {name: 'MySQL', icon: 'fas fa-table fa-2x' },
+        {name: 'IBM DB2', icon: 'fas fa-database fa-2x' },
+        {name: 'MongoDB', icon: 'far fa-file fa-2x' },
+        {name: 'Scrum', icon: 'fas fa-code fa-2x' },
+        {name: 'Clean Code', icon: 'fas fa-soap fa-2x' },
+    ],
+     badges: [
+      { src: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15189734', link: 'https://skillsoft.digitalbadges.skillsoft.com/801b1e25-94e1-4964-bf17-89b304b2f982#gs.9kvo2f' , style: ''},
+      { src: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15189782', link: 'https://skillsoft.digitalbadges.skillsoft.com/8724b22d-cbdc-4785-a475-a4a3aea4be8b#gs.9kvrfk' , style: ''},
+      { src: 'https://images.youracclaim.com/size/680x680/images/5ca7b236-6105-4154-ba22-c8ae12ec1d8c/Data%2BSci%2BFound%2BLevel%2B1%2B-%2BCC%2B-%2B2019.png', link: 'https://www.youracclaim.com/badges/961793d4-9ec7-4823-a7c9-8a28648d52bf/public_url' , style: 'width: 40%; height: 40%;' },
+      { src: 'https://hermes.digitalinnovation.one/certificates/cover/AB480133.jpg', link: 'https://certificates.digitalinnovation.one/AB480133' , style: 'width: 100%; height: 100%;' },
+      { src: 'https://hermes.digitalinnovation.one/certificates/cover/94DBB041.jpg', link: 'https://certificates.digitalinnovation.one/94DBB041' , style: 'width: 100%; height: 100%;' },
+     ]
   }

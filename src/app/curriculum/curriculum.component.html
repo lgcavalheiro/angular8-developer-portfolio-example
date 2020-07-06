@@ -25,9 +25,9 @@
   <div class="content-card">
     <h2>Skills</h2>
     <div class="cl-3 rw-3">
-      <div *ngFor="let s of skills; index as i; first as isFirst">
-        <i *ngIf="s.icon != 'none'; else showName" class="{{s.icon}}"></i>
-        <ng-template #showName>{{s.name}}</ng-template>
+      <div *ngFor="let s of skills; index as i; first as isFirst" class="skill-item">
+        <i *ngIf="s.icon != 'none'" class="{{s.icon}}"></i>
+        {{s.name}}
       </div>
     </div>
   </div>
@@ -40,12 +40,16 @@
         <div class="carousel-item" *ngFor="let badge of badges; index as i; first as isFirst" (click)="goToBadgeUrl(badge.link)">
           <img src="{{badge.src}}" alt="" style="{{badge.style}}" [hidden]="currentBadge != i">
         </div>
+        <h5>Click on an image to show more information</h5>
       </div>
       <button class="bt-s bt-gray" (click)="changeBadge(1)" style="justify-self: start;"><i class="fas fa-chevron-right"></i></button>
     </div>
   </div>
 
 </div>
+
+<!-- <div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
+<a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> -->
 
 
 
