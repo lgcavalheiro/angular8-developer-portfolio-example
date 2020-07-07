@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { projects } from '../appUtils/sot';
 
 @Component({
   selector: 'app-projects',
@@ -11,5 +12,11 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  goToUrl(url: string) {
+    window.open(url,'_blank')
+  }
+
+  projects = projects;
 
 }

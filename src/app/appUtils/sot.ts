@@ -1,3 +1,5 @@
+import { Placeholder } from '@angular/compiler/src/i18n/i18n_ast';
+
 export const about = {
     greet: `Hi! I'm Lucas Cavalheiro, glad you came by!`,
     experience: `I'm a programmer with over 2 years of experience in the areas of telecommunications and banking.`,
@@ -51,3 +53,52 @@ export const curriculum = {
       { src: 'https://hermes.digitalinnovation.one/certificates/cover/94DBB041.jpg', link: 'https://certificates.digitalinnovation.one/94DBB041' },
      ]
   }
+
+export const projects = {
+  left: [
+    {
+      name: 'Project 1',
+      img: 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat purus a tellus vehicula, vitae bibendum nulla dignissim.',
+      github: '',
+      view: ''
+    },
+    {
+      name: 'Project 2',
+      img: 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat purus a tellus vehicula, vitae bibendum nulla dignissim.',
+      github: '',
+      view: ''
+    },
+    {
+      name: 'Project 3',
+      img: 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat purus a tellus vehicula, vitae bibendum nulla dignissim.',
+      github: '',
+      view: ''
+    }
+  ],
+  right: [
+    {
+      name: 'Project 4',
+      img: 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat purus a tellus vehicula, vitae bibendum nulla dignissim.',
+      github: '',
+      view: ''
+    },
+    {
+      name: 'Project 5',
+      img: 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat purus a tellus vehicula, vitae bibendum nulla dignissim.',
+      github: '',
+      view: ''
+    },
+    {
+      name: 'Project 6',
+      img: 'https://images.unsplash.com/photo-1565106430482-8f6e74349ca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat purus a tellus vehicula, vitae bibendum nulla dignissim.',
+      github: '',
+      view: ''
+    }
+  ]
+}

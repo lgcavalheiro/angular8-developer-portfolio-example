@@ -1,0 +1,19 @@
+.projects {
+  position: absolute;
+  left: 0px;
+  top: 8em;
+}
+
+.project-thumb {
+  width: 100%;
+  height: auto;
+  max-width: 256px;
+  max-height: 256px;
+  justify-self: center;
+  align-self: center;
+}
+
+.project-body {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
