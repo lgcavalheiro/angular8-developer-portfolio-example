@@ -1,6 +1,6 @@
 <div class="cl-2 curriculum">
   <div class="col content-card">
-    <h2>Work History</h2>
+    <h2 class="card-title">Work History</h2>
     <div class="tabs">
       <div class="tab" *ngFor="let w of work; index as i; first as isFirst">
         <input type="checkbox" id="work{{i}}">
@@ -16,29 +16,37 @@
   </div>
 
   <div class="content-card">
-    <h2>Degrees & Training</h2>
+    <h2 class="card-title">Degrees & Training</h2>
     <ul>
       <li *ngFor="let degree of degrees; index as i; first as isFirst">{{degree}}</li>
     </ul>
   </div>
 
   <div class="content-card">
-    <h2>Skills</h2>
-    <div class="cl-3 rw-3">
-      <div *ngFor="let s of skills; index as i; first as isFirst" class="skill-item">
+    <h2 class="card-title">Skills</h2>
+    <h3 class="skill-title">Web development</h3>
+    <div class="cl-3 rw-3 skills-container">
+      <div *ngFor="let s of skills.web; index as i; first as isFirst" class="skill-item">
         <i *ngIf="s.icon != 'none'" class="{{s.icon}}"></i>
+        {{s.name}}
+      </div>
+    </div>
+    <h3 class="skill-title">Other skills</h3>
+    <div class="cl-3 rw-3 skills-container">
+      <div *ngFor="let s of skills.otherSkills; index as i; first as isFirst" class="skill-item">
+        <i *ngIf="s.icon" class="{{s.icon}}"></i>
         {{s.name}}
       </div>
     </div>
   </div>
 
   <div class="content-card">
-    <h2>Badges & Certifications</h2>
+    <h2 class="card-title">Badges & Certifications</h2>
     <div class="carousel">
       <button class="bt-s bt-gray" (click)="changeBadge(-1)" style="justify-self: end;"><i class="fas fa-chevron-left"></i></button>
       <div class="carousel-window">
         <div class="carousel-item" *ngFor="let badge of badges; index as i; first as isFirst" (click)="goToBadgeUrl(badge.link)">
-          <img src="{{badge.src}}" alt="" style="{{badge.style}}" [hidden]="currentBadge != i">
+          <img src="{{badge.src}}" alt="" class="responsive-img" [hidden]="currentBadge != i">
         </div>
         <h5>Click on an image to show more information</h5>
       </div>
@@ -47,10 +55,3 @@
   </div>
 
 </div>
-
-<!-- <div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
-<a href="http://www.onlinewebfonts.com">oNline Web Fonts</a> -->
-
-
-
-
