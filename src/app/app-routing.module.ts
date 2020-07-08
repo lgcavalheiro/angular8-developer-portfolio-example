@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { CurriculumComponent } from './curriculum/curriculum.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent
   },
+  {
+    path: '',
+    component: HomeComponent
+  }
 ];
 
 @NgModule({
