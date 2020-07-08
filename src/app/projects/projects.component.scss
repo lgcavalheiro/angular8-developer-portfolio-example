@@ -13,7 +13,12 @@
   align-self: center;
 }
 
-.project-body {
+.project-body-left {
   display: grid;
   grid-template-columns: 40% 60%;
+}
+
+.project-body-right {
+  display: grid;
+  grid-template-columns: 60% 40%;
 }

@@ -49,7 +49,7 @@ export const curriculum = {
       { src: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15189734', link: 'https://skillsoft.digitalbadges.skillsoft.com/801b1e25-94e1-4964-bf17-89b304b2f982#gs.9kvo2f'},
       { src: 'https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15189782', link: 'https://skillsoft.digitalbadges.skillsoft.com/8724b22d-cbdc-4785-a475-a4a3aea4be8b#gs.9kvrfk'},
       { src: 'https://images.youracclaim.com/size/680x680/images/5ca7b236-6105-4154-ba22-c8ae12ec1d8c/Data%2BSci%2BFound%2BLevel%2B1%2B-%2BCC%2B-%2B2019.png', link: 'https://www.youracclaim.com/badges/961793d4-9ec7-4823-a7c9-8a28648d52bf/public_url'},
-      { src: 'https://hermes.digitalinnovation.one/certificates/cover/AB480133.jpg', link: 'https://certificates.digitalinnovation.one/AB480133' },
+      { src: 'https://images.youracclaim.com/size/680x680/images/84ac9eff-b8a2-4683-846b-f59887a73801/Python%2B101%2BData%2BScience.png', link: 'https://www.youracclaim.com/badges/4705af36-98ad-4c8c-bdde-77dd97551c03/public_url' },
       { src: 'https://hermes.digitalinnovation.one/certificates/cover/94DBB041.jpg', link: 'https://certificates.digitalinnovation.one/94DBB041' },
      ]
   }
