@@ -29,11 +29,11 @@ html, body {
 
 .component {
   position: absolute;
-  top: 8rem;
+  top: 10rem;
   @media (min-width: 821px) {
     top: 6rem;
   }
-  @media (min-width: 1019px) {
+  @media (min-width: 1279px) {
     top: 4rem;
   }
 }
