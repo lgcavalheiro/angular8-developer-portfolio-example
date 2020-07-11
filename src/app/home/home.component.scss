@@ -1,104 +1,25 @@
-@import '../../styles/variables';
-
 .home {
   position: absolute;
-  left: 8em;
   top: 8em;
 }
 
-.shape {
-  background-color: $gray8;
-  width: 35.5vw;
-  height: 512px;
-}
-
-.greet {
-  top: 0.1em;
-  position: absolute;
-  width: 74.5vw;
-  /* Extra Small (xsm) */
-   @media (min-width: 320px) {
-    font-size: 16px;
-    left: -4.5em;
-  }
-  /* Small (sm) */
-   @media (min-width: 640px) {
-    font-size: 16px;
-    left: -2em;
-  }
-  /* Medium (md) */
-  @media (min-width: 768px) {
-    font-size: 32px;
-      left: 1em;
-  }
-  /* Large (lg) */
-  @media (min-width: 1024px) {
-    font-size: 36px;
-    left: 1em;
-  }
-  /* Extra Large (xl) */
-  @media (min-width: 1280px) {
-    font-size: 48px;
-    left: 1em;
-  }
-}
-
-.call-to-action {
-  top: 10em;
-  position: absolute;
-  width: 58vw;
-  /* Extra Small (xsm) */
-   @media (min-width: 320px) {
-    font-size: 10px;
-    left: -7em;
-  }
-  /* Small (sm) */
-   @media (min-width: 640px) {
-    font-size: 12px;
-    left: -2.5em;
-  }
-  /* Medium (md) */
-  @media (min-width: 768px) {
-    font-size: 24px;
-      left: 1.5em;
-  }
-  /* Large (lg) */
-  @media (min-width: 1024px) {
-    font-size: 26px;
-    left: 1.5em;
-  }
-  /* Extra Large (xl) */
-  @media (min-width: 1280px) {
-    font-size: 32px;
-    left: 1.5em;
-  }
+.text {
+  padding-left: 6rem;
+  padding-bottom: 4rem;
 }
 
 .bt-positioned {
-  position: absolute;
-  /* Extra Small (xsm) */
-   @media (min-width: 320px) {
-    left: -3.2em;
-    top: 8em;
-  }
-  /* Small (sm) */
-   @media (min-width: 640px) {
-    left: 1em;
-    top: 8em;
-  }
-  /* Medium (md) */
-  @media (min-width: 768px) {
-    left: 6em;
-    top: 15.9em;
-  }
-  /* Large (lg) */
-  @media (min-width: 1024px) {
-    left: 15em;
-    top: 15.9em;
-  }
-  /* Extra Large (xl) */
-  @media (min-width: 1280px) {
-    left: 31em;
-    top: 15.9em;
+  justify-self: end;
+}
+
+.cont {
+  height: auto;
+  width: auto;
+  max-width: 78vw;
+  max-height: 512px;
+  display: grid;
+  margin-left: 0;
+  @media (min-width: 415px) {
+    margin-left: 5rem;
   }
 }

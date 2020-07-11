@@ -24,7 +24,7 @@ input {
   width: 100%;
   color: $gray2;
   overflow: hidden;
-  margin-bottom: -20px;
+  margin-bottom: -2.5em;
   &-label {
     display: flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ input {
   }
   &-content {
     max-height: 0;
-    padding: 0 1em;
+    padding: 1.2em 1em;
     color: $gray2;
     background: $gray9;
     transition: all .35s;
@@ -74,6 +74,6 @@ input:checked {
   }
   ~ .tab-content {
     max-height: 100vh;
-    padding: 1em;
+    padding: 2em;
   }
 }
