@@ -9,10 +9,8 @@
   &-s {
     transition: all 0.2s;
     border-radius: 2px;
-    border-width: 4px;
     width: 64px;
     height: 32px;
-    padding: 1px;
     margin: 4px;
     font-size: 16px;
     cursor: pointer;
@@ -32,11 +30,9 @@
     transition: all 0.2s;
     width: 256px;
     height: 64px;
-    padding: 8px;
     margin: 4px;
     font-size: 19px;
     border-radius: 2px;
-    border-width: 8px;
     cursor: pointer;
   }
 }

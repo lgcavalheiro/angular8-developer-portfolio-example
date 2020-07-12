@@ -1,3 +1,27 @@
-<div class="component">
-  <p>contact works!</p>
+<div class="contact component content-card">
+  <h1 class="card-title">Contact</h1>
+  <p style="max-width: 48ch;">Use the form below to send me a message, you can also get in touch with me through LinkedIn or Github.</p>
+  <form class="contact-form" [formGroup]="contactForm">
+    <ul style="list-style: none; padding: 0;">
+      <li class="cl-1 text-input">
+        <label for="name">Your name</label>
+        <input type="text" formControlName="name" id="name">
+      </li>
+      <li class="cl-1 text-input">
+        <label for="email">Your email</label>
+        <input type="text" formControlName="email" id="email">
+      </li>
+      <li class="cl-1 text-input">
+        <label for="subject">Your subject</label>
+        <input type="text" formControlName="subject" id="subject">
+      </li>
+      <li class="cl-1" style="">
+        <label for="message">Your message</label>
+        <textarea formControlName="message" id="message" cols="30" rows="10"></textarea>
+      </li>
+      <li>
+        <input class="bt-l bt-blue" style="margin-left: 0;" type="submit" value="Send message">
+      </li>
+    </ul>
+  </form>
 </div>

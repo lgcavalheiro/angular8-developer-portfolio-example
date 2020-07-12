@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.text-input {
+  max-width: 32ch;
+}
+
+ul>li {
+  margin-bottom: 1.5em;
+}
+
+label {
+  margin-bottom: 0.5em;
+}
+
+.contact {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+input[type="text"], textarea {
+  background-color: $gray7;
+  border-radius: 2px;
+  border-bottom: 1px solid $blue5;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  color: $gray1;
+  padding: 0.5em;
+  transition: 0.2s all;
+
+  &:focus {
+    -moz-transform: scale(1.16);
+    background-color: $gray6;
+    border-left: 4px solid $blue5;
+    border-right: 4px solid $blue5;
+    /* border-bottom: none; */
+  }
+}

@@ -3,7 +3,7 @@
     <h2 class="card-title">Work History</h2>
     <div class="tabs">
       <div class="tab" *ngFor="let w of work; index as i; first as isFirst">
-        <input type="checkbox" id="work{{i}}">
+        <input class="acc-input" type="checkbox" id="work{{i}}">
         <label class="tab-label" for="work{{i}}">{{w.name}}</label>
         <div class="tab-content">
           <h2>Description:</h2>
