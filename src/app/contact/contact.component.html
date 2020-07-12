@@ -1,6 +1,9 @@
 <div class="contact component content-card">
   <h1 class="card-title">Contact</h1>
-  <p style="max-width: 48ch;">Use the form below to send me a message, you can also get in touch with me through LinkedIn or Github.</p>
+  <p style="max-width: 48ch;">
+    Use the form below to send me a message, you can also get in touch with me through
+    <a href="https://www.linkedin.com/in/lgcavalheiro/" target="_blank">LinkedIn</a> or <a href="https://github.com/lgcavalheiro" target="_blank">Github</a>.
+  </p>
   <form class="contact-form" [formGroup]="contactForm">
     <ul style="list-style: none; padding: 0;">
       <li class="cl-1 text-input">
@@ -20,7 +23,7 @@
         <textarea formControlName="message" id="message" cols="30" rows="10"></textarea>
       </li>
       <li>
-        <input class="bt-l bt-blue" style="margin-left: 0;" type="submit" value="Send message">
+        <input class="bt-l bt-blue" style="margin-left: 0;" type="submit" value="Send message" (click)="printForm()">
       </li>
     </ul>
   </form>

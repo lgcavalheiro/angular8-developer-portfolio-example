@@ -34,6 +34,18 @@ input[type="text"], textarea {
     background-color: $gray6;
     border-left: 4px solid $blue5;
     border-right: 4px solid $blue5;
-    /* border-bottom: none; */
+  }
+}
+
+a {
+  color: $blue5;
+  text-decoration: none;
+
+  &:hover {
+    color: lighten($color: $blue5, $amount: 20);
+  }
+
+  &:active {
+    color: darken($color: $blue5, $amount: 20);
   }
 }

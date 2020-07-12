@@ -21,4 +21,8 @@ export class ContactComponent implements OnInit {
     });
   }
 
+  printForm() {
+    console.log(this.contactForm);
+  }
+
 }
