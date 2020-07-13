@@ -12,6 +12,7 @@ export class AboutComponent implements OnInit {
   info = {
     greet: about.greet,
     experience: about.experience,
+    experience2: about.experience2,
     work: about.work,
   }
 

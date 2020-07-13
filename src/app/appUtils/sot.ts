@@ -1,9 +1,14 @@
 import { Placeholder } from '@angular/compiler/src/i18n/i18n_ast';
 
 export const about = {
-    greet: `Hi! I'm Lucas Cavalheiro, glad you came by!`,
-    experience: `I'm a programmer with over 2 years of experience in the areas of telecommunications and banking.`,
-    work: `So far, i've worked maintaining I.T systems, developing software and single page applications.`
+    greet: `Hello! I'm glad you came by.`,
+    experience:
+      `I'm a web developer with over 2 years of experience in the areas of telecommunications and banking.
+      So far, i've worked maintaining I.T systems, developing software and single page applications.`,
+    experience2:
+      `I have worked with companies such as BNDES and IBM Global Financing in the pursuit of better fulfilling their business needs,
+      as this is something i personally always strive for in my craft.`,
+    work: `I am also interested and open for opportunities involving FOSS, mobile development, artificial intelligence and data science.`
   };
 
 export const curriculum = {
