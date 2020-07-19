@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +11,7 @@ export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder, private http: HttpClient) { }
 
   ngOnInit(): void {
     this.contactForm = this.formBuilder.group({
@@ -19,6 +20,20 @@ export class ContactComponent implements OnInit {
       subject: [null],
       message: [null]
     });
+  }
+
+  onSubmit() {
+    if (this.contactForm.valid) {
+      const email = this.contactForm.value;
+      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+      this.http.post('https://formspree.io/mwkrwgpk',
+        { name: email.name, replyto: email.email, subject: email.subject, message: email.message },
+        { 'headers': headers }).subscribe(
+          response => {
+            console.log(response);
+          }
+        );
+    }
   }
 
   printForm() {

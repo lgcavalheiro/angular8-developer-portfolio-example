@@ -4,26 +4,26 @@
     Use the form below to send me a message, you can also get in touch with me through
     <a href="https://www.linkedin.com/in/lgcavalheiro/" target="_blank">LinkedIn</a> or <a href="https://github.com/lgcavalheiro" target="_blank">Github</a>.
   </p>
-  <form class="contact-form" [formGroup]="contactForm">
+  <form class="contact-form" [formGroup]="contactForm" method="POST" (ngSubmit)="onSubmit()">
     <ul style="list-style: none; padding: 0;">
       <li class="cl-1 text-input">
         <label for="name">Your name</label>
-        <input type="text" formControlName="name" id="name">
+        <input type="text" formControlName="name" name="name" id="name">
       </li>
       <li class="cl-1 text-input">
         <label for="email">Your email</label>
-        <input type="text" formControlName="email" id="email">
+        <input type="text" formControlName="email" name="_replyto" id="email">
       </li>
       <li class="cl-1 text-input">
         <label for="subject">Your subject</label>
-        <input type="text" formControlName="subject" id="subject">
+        <input type="text" formControlName="subject" name="subject" id="subject">
       </li>
       <li class="cl-1" style="">
         <label for="message">Your message</label>
-        <textarea formControlName="message" id="message" cols="30" rows="10"></textarea>
+        <textarea formControlName="message" name="message" id="message" cols="30" rows="10"></textarea>
       </li>
       <li>
-        <input class="bt-l bt-blue" style="margin-left: 0;" type="submit" value="Send message" (click)="printForm()">
+        <input class="bt-l bt-blue" style="margin-left: 0;" type="submit" value="Send message">
       </li>
     </ul>
   </form>
