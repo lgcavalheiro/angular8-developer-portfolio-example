@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
@@ -15,14 +15,15 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     this.contactForm = this.formBuilder.group({
-      name: [null],
-      email: [null],
-      subject: [null],
-      message: [null]
+      name: [null, [Validators.required, Validators.minLength(4)]],
+      email: [null, [Validators.required, Validators.email]],
+      subject: [null, [Validators.required, Validators.minLength(4)]],
+      message: [null, [Validators.required, Validators.minLength(16)]]
     });
   }
 
   onSubmit() {
+    this.contactForm.markAllAsTouched()
     if (this.contactForm.valid) {
       const email = this.contactForm.value;
       const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
@@ -38,6 +39,17 @@ export class ContactComponent implements OnInit {
 
   printForm() {
     console.log(this.contactForm);
+  }
+
+  checkValidTouched(field: any){
+    return !this.contactForm.get(field).valid && this.contactForm.get(field).touched;
+  }
+
+  applyCssError(field: any){
+    return {
+      'has-error': this.checkValidTouched(field),
+      'has-feedback': this.checkValidTouched(field)
+    }
   }
 
 }
