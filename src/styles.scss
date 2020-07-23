@@ -8,11 +8,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 html, body {
-  background-color: $gray9;
   background-image: url('./assets/bg.jpg');
   background-position: 0 0;
-  background-repeat: no-repeat;
-  opacity: 0.5;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: $blue5;
   font-family: 'Roboto Mono', monospace;
   color: $gray2;
   margin: 0;
