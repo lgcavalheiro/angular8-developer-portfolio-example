@@ -9,6 +9,10 @@
 
 html, body {
   background-color: $gray9;
+  background-image: url('./assets/bg.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  opacity: 0.5;
   font-family: 'Roboto Mono', monospace;
   color: $gray2;
   margin: 0;
