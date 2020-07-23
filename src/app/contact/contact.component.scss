@@ -50,6 +50,10 @@ a {
   }
 }
 
-.has-error, .has-feedback {
-  border: 2px solid red;
+.has-error {
+  border-color: $red5 !important;
+}
+
+.message-ok {
+  color: $green5;
 }

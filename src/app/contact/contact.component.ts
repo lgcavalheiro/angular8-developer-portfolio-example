@@ -10,6 +10,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class ContactComponent implements OnInit {
 
   contactForm: FormGroup;
+  isSending: boolean;
+  messageOk: boolean;
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient) { }
 
@@ -20,18 +22,27 @@ export class ContactComponent implements OnInit {
       subject: [null, [Validators.required, Validators.minLength(4)]],
       message: [null, [Validators.required, Validators.minLength(16)]]
     });
+    this.isSending = false;
+    this.messageOk = false;
   }
 
   onSubmit() {
     this.contactForm.markAllAsTouched()
     if (this.contactForm.valid) {
       const email = this.contactForm.value;
+      this.isSending = true;
       const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
       this.http.post('https://formspree.io/mwkrwgpk',
         { name: email.name, replyto: email.email, subject: email.subject, message: email.message },
         { 'headers': headers }).subscribe(
           response => {
-            console.log(response);
+            this.contactForm.reset()
+            this.isSending = false;
+            // @ts-ignore
+            if(response.ok) {
+              this.messageOk = true;
+              setTimeout(() => { this.messageOk = false }, 2000);
+            }
           }
         );
     }
@@ -47,8 +58,7 @@ export class ContactComponent implements OnInit {
 
   applyCssError(field: any){
     return {
-      'has-error': this.checkValidTouched(field),
-      'has-feedback': this.checkValidTouched(field)
+      'has-error': this.checkValidTouched(field)
     }
   }
 
