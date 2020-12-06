@@ -1,8 +1,8 @@
 .project-thumb {
   width: 100%;
   height: auto;
-  max-width: 256px;
-  max-height: 256px;
+  max-width: 128px;
+  max-height: 128px;
   justify-self: center;
   align-self: center;
   margin-right: 0.5rem;
@@ -10,20 +10,38 @@
 }
 
 .project-body {
-    &-left {
-      display: grid;
-      grid-template-columns: 40% 60%;
-    }
-    &-right {
-      display: grid;
-      grid-template-columns: 60% 40%;
-    }
+  &-left {
+    display: grid;
+    grid-template-columns: 32% 1fr;
+  }
+  &-right {
+    display: grid;
+    grid-template-columns: 1fr 32%;
+  }
 }
 
 .project-content {
   margin: 1rem;
+  
+  p {
+    @media (min-width: 640px) {
+      height: 6em;
+    }
+    /* Medium (md) */
+    @media (min-width: 768px) {
+      height: 6em;
+    }
+    /* Large (lg) */
+    @media (min-width: 1024px) {
+      height: 6em;
+    }
+    /* Extra Large (xl) */
+    @media (min-width: 1280px) {
+      height: 6em;
+    }
+  }
 
   button {
-    margin-left: 0;
+    margin-right: 0.5em;
   }
 }

@@ -4,7 +4,7 @@
       <div class="content-card" *ngFor="let p of projects.left; index as i; first as isFirst">
         <h3 class="card-title">{{p.name}}</h3>
         <div class="project-body-left">
-          <img src="{{p.img}}" class="project-thumb" alt="" srcset="">
+          <img src="{{p.img}}" class="project-thumb" alt="" srcset="" width="64" height="64">
           <div class="project-content">
             <p>{{p.description}}</p>
             <button type="button" class="bt-m bt-blue" (click)="goToUrl(p.github)">
