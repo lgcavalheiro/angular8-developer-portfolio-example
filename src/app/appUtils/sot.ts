@@ -2,7 +2,7 @@ import { Placeholder } from "@angular/compiler/src/i18n/i18n_ast";
 
 export const about = {
   greet: `Hello! I'm glad you came by.`,
-  experience: `I'm a web developer with over 2 years of experience in the areas of telecommunications and banking.
+  experience: `I'm a software developer with 4 years of experience in the areas of telecommunications and banking.
       So far, i've worked maintaining I.T systems, developing software and single page applications.`,
   experience2: `I have worked with companies such as BNDES and IBM Global Financing in the pursuit of better fulfilling their business needs,
       as this is something i personally always strive for in my craft.`,
@@ -46,7 +46,7 @@ export const curriculum = {
     otherSkills: [
       { name: "MySQL" },
       { name: "IBM DB2" },
-      { name: "MongoDB" },
+      { name: "GraphQL"},
       { name: "Scrum" },
       { name: "Clean Code" },
     ],
